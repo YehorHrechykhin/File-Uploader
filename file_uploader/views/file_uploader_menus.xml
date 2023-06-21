@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_file_uploader"
+              name="File Uploader"
+              action="file_uploader_action"/>
+
+</odoo>

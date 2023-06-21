@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="file_uploader_form_view" model="ir.ui.view">
+        <field name="name">file.uploader.form</field>
+        <field name="model">file.uploader</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" required="1"/>
+                        <field name="file" widget="binary" required="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="file_uploader_view_tree" model="ir.ui.view">
+        <field name="name">file.uploader.view.tree</field>
+        <field name="model">file.uploader</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="upload_date"/>
+                <field name="file" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="file_uploader_action" model="ir.actions.act_window">
+        <field name="name">File Uploader</field>
+        <field name="res_model">file.uploader</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

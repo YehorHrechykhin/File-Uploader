@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+
+    <record id="file_uploader_file_1" model="file.uploader">
+        <field name="name">Python Logo</field>
+        <field name="file" type="base64" file="file_uploader/static/img/python_logo.png"/>
+    </record>
+
+    <record id="file_uploader_file_2" model="file.uploader">
+        <field name="name">Odoo Logo</field>
+        <field name="file" type="base64" file="file_uploader/static/img/odoo_logo.png"/>
+    </record>
+
+    <record id="file_uploader_file_3" model="file.uploader">
+        <field name="name">Python Zip File</field>
+        <field name="file" type="base64" file="file_uploader/static/file/python_all.zip"/>
+    </record>
+
+</odoo>
